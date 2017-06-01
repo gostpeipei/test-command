@@ -1,0 +1,62 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/bert.zhang/.nvm/versions/node/v7.8.0/bin/node /Users/bert.zhang/.nvm/versions/node/v7.8.0/bin/firebase deploy
+[debug] CLI Version:  3.6.1
+[debug] Platform:     darwin
+[debug] Node Version: v7.8.0
+[debug] Time:         Fri Apr 14 2017 10:51:10 GMT+0800 (CST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/sgjltYMirNCwmcBzC9NcfBY9w_ES0a5gnuyu_g_Lsx4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Apr 14 2017 10:51:10 GMT+0800 (CST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/library-app-cc314  
+ Fri Apr 14 2017 10:51:11 GMT+0800 (CST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/library-app-cc314/tokens  
+ Fri Apr 14 2017 10:51:12 GMT+0800 (CST)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'library-app-cc314'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] ✔  database: rules ready to deploy.
+[debug] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/library-app-cc314?view=CONSUMER_VIEW  
+ Fri Apr 14 2017 10:51:17 GMT+0800 (CST)
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/library-app-cc314?view=CONSUMER_VIEW  
+ Fri Apr 14 2017 10:51:17 GMT+0800 (CST)
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/library-app-cc314  
+ Fri Apr 14 2017 10:51:18 GMT+0800 (CST)
+[debug] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/library-app-cc314/apiKeys  
+ Fri Apr 14 2017 10:51:18 GMT+0800 (CST)
+[debug] <<< HTTP RESPONSE 200
+[debug] Error fetching server API key: 
+[info] i  functions: preparing functions directory for uploading...
+[debug] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/library-app-cc314/configs  
+ Fri Apr 14 2017 10:52:40 GMT+0800 (CST)
+[debug] Error: connect ETIMEDOUT 216.58.200.234:443
+    at Object.exports._errnoException (util.js:1034:11)
+    at exports._exceptionWithHostPort (util.js:1057:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1096:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.200.234:443

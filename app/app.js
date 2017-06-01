@@ -15,4 +15,13 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+Ember.Route.reopen({
+	isShowNavbar: true,
+	setupController() {
+		// console.log(this.isShowNavbar === this.get('isShowNavbar'))
+		console.log('111')
+		this._super(...arguments);
+		this.controllerFor('application').set('isShowNavbar', this.get('isShowNavbar'));
+	}
+})
 export default App;

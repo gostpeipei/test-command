@@ -1,0 +1,14 @@
+<ul class="errors">
+	{{#each errors as |error|}}
+	<li>{{error.message}}</li>
+	{{/each}}
+</ul>
+<fieldset>
+	{{input type="text" name="user.name" value=name change=(action "required")}}
+	{{input type="text" name="user.department" value=department change=(action "required")}}
+	{{input type="text" name="user.eamil" value=eamil change=(action "required")}}
+	<button {{action 'removeSelf'}}>remove</button>
+</fieldset>
+
+
+{{yield}}

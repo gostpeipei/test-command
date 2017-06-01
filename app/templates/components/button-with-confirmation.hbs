@@ -1,0 +1,9 @@
+<h2>button-with-confirmation</h2>
+<button {{action 'launchConfirmDialog'}}>{{text}}</button>
+{{#if confirmShown}}
+	<div class="confirm-dialog">
+		<button class="confirm-submit" {{action 'submitConfirm'}}>OK</button>
+		<button class="confirm-cancel" {{action 'cancelConfirm'}}>Cancel</button>
+	</div>
+{{/if}}
+{{yield}}

@@ -1,0 +1,11 @@
+<h1>About Page</h1>
+{{ input type='text' value=myTest }}
+{{fake "name.findName"}}
+{{fake "name.findName" locale="zh_CN"}}
+{{fake "name.findName"}}
+{{fake "finance.amount" 0 100 2 "$"}}
+{{fake "random.objectElement" (hash foo=1 bar=2 baz=3)}}
+{{user-profile}}
+{{!-- {{#user-profile}}
+{{/user-profile}} --}}
+{{outlet}}

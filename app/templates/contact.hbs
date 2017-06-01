@@ -1,0 +1,19 @@
+<h1>Contact Page</h1>
+<div class="form-group has-success">
+  <label class="control-label" for="email">Input with success</label>
+  {{input type="email" class="form-control" id="email" aria-describedby="helpBlock2" value=emailAddress }}
+  {{#if isValid1}}
+  	<span id="helpBlock2" class="help-block">Mailbox number correct</span>
+  {{/if}}
+</div>
+{{textarea class="form-control form-group" rows="7" value=textMsg placeholder="Your message at least 5 characters"}}
+
+<div class="pull-right form-group col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+    <button disabled={{isDisabled}} 
+		{{action 'sendMsg'}}
+    class="row pull-right btn btn-primary btn-lg btn-block">Send Msg</button>
+</div>
+{{#if resMsg}}
+	<span id="helpBlock2" class="help-block">{{resMsg}}</span>
+{{/if}}
+{{outlet}}

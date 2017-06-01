@@ -1,0 +1,10 @@
+<h2>Test-Page</h2>
+{{#if isShow}}
+	<button {{action 'toggle'}}>hide</button>
+	<div>body</div>
+{{/if}}
+<button {{action 'toggle'}}>show</button>
+<a href="http://www.baidu.com" {{action "toggle" preventDefault=false}}>  
+点我跳转
+</a> 
+{{outlet}}

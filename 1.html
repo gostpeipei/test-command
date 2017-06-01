@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="allocate-detail-btn">add</button>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	
+	version1
+
+
+	<script
+	src="http://code.jquery.com/jquery-1.12.4.js"
+	integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	crossorigin="anonymous"></script>
+	<script>
+
+		// var btn = document.querySelector('button')
+		// var body = document.querySelector('body')
+		// $('a.allocate-btn').bind('click', function() {
+		// 	console.log(1)
+		// 	var script = document.createElement('script')
+		// 	script.setAttribute('src', 'a.js')
+
+		// 	body.appendChild(script)
+		// })
+		// // btn.addEventListener('click', function() {
+
+		// // })
+		// // 
+		
+		// var g = $('li').slice(2, length-1)
+		// 
+		// (function fn(){
+		// 	$('li').eq(3).on('click', function(e) {
+		// 		e.preventDefault();
+		// 		e.stopPropagation();
+		// 		console.log(1)
+		// 	})
+		// })()
+		// 
+		// console.log($('button')[0].getBoundingClientRect())
+		$('button').on('click', function(e) {
+			// e.preventDefault();
+			// e.stopPropagation();
+			// fn();
+			console.log(this)
+			console.log($(this))
+		})
+		// var a = $('li')
+		// var a2 = a.eq(2);
+		// var g = a.slice(2)
+		// var gn = g.next();
+		// var sum = 0;
+		// a.each(function(index, value) {
+		// 	sum += +value.innerText;
+		// 	// console.log(value.innerText)
+		// })
+		// console.log(sum)
+		// // console.log(a2)
+		// console.log(a)
+		// console.log(g)
+		// console.log(gn)
+	</script>
+</body>
+</html>

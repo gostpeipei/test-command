@@ -6,6 +6,23 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: 'AIzaSyBQ_zsDjCRrVGbLKov8Cm18fDtilgJbTwk',
+      authDomain: 'library-app-cc314.firebaseapp.com',
+      databaseURL: 'https://library-app-cc314.firebaseio.com',
+      storageBucket: 'library-app-cc314.appspot.com',
+      messagingSenderId: '983772940211'
+    },
+
+    // if using ember-cli-content-security-policy
+    // contentSecurityPolicy: {
+    //   'script-src': "'self' 'unsafe-eval' apis.google.com",
+    //   'frame-src': "'self' https://*.firebaseapp.com",
+    //   'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    // },
+
+    
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,6 +39,7 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
